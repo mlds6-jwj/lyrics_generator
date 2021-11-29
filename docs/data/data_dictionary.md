@@ -2,11 +2,10 @@
 
 In this document you must describe the tables, collections or files that you are using in the project. You can describe each database and provide UML diagrams for a better design description.
 
-# Database Name 1
+# Lyrics.txt
 
-Description of the database.
-
-![UML Diagram](/file/uml/database1)
+This database is the collection of all the lyrics available. It's divided by artist and song. Each artist have 25 songs and will be in raw format. Once made the data 
+preprocessing, the table should have this format: 
 
 ## Table 1
 
@@ -14,18 +13,6 @@ Here you must describe the table
 
 | column | type | description |
 | --- | --- | --- |
-| col1 | INT | Example column |
+| Artist | STR | "Depeche Mode" |
+| Songs  | STR | All the songs of the artist will be joined in a corpus for each artist |
 
-# Database Name 2
-
-Description of the database.
-
-![UML Diagram](/file/uml/database1)
-
-## Table 2
-
-Here you must describe the table
-
-| column | type | description |
-| --- | --- | --- |
-| col1 | INT | Example column |
