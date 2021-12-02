@@ -1,6 +1,6 @@
 # README scripts folder
 
-In this folder we have the folliwing subfolders with the contyent specified bellow:
+In this folder we have the folliwing subfolders with the content specified bellow:
 * data_acquisition:
 * eda:
 * evaluation:
