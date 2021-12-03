@@ -50,7 +50,7 @@
 
   Increase Lyrics acceptation by at least 15%.
   
-* What is the baseline (current) value of the metric? (e.g. current fraction of users with 4-week inactivity = 60%)
+* What is the baseline (current) value of the metric?
   
   Usually the lyric acceptation by the record label is around 30 percent.
   
@@ -70,12 +70,12 @@ Timeline - 3 weeks from now, approximately Dec 16th - 2021
 
 ## Architecture
 * Data
-  * What data do we expect? Raw data in the customer data sources (e.g. on-prem files, SQL, on-prem Hadoop etc.) 
-	- .txt files containing the lyrics for the training of the model or the list of the artist provided by the client
+  * What data do we expect? Raw data in the customer data sources.
+	- Plain text files containing the lyrics for training of model or the list of the artist provided by the client
 * Data movement from on-prem to Azure using ADF or other data movement tools (Azcopy, EventHub etc.) to move either
   * For every model, we will pick all the available data for constructing the richest possible lyrics database.
 
-* What tools and data storage/analytics resources will be used in the solution e.g.,
+* What tools and data storage/analytics resources will be used in the solution.
   * Python for feature construction, aggregation and sampling
   * Git for colaboratory working
 
@@ -89,6 +89,9 @@ Timeline - 3 weeks from now, approximately Dec 16th - 2021
 
 ## Communication
 * How will we keep in touch? Weekly meetings?
-- We will be in touch weekly, because we all are in other projects
+
+  We will be in touch weekly.
+  
 * Who are the contact persons on both sides?
-- William Agudelo, Juan Sebastian Lara, Melissa de la Pava
+  
+  William Agudelo, Juan Sebastian Lara, Melissa de la Pava
