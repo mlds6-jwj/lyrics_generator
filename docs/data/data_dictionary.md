@@ -13,6 +13,6 @@ Here you must describe the table
 
 | column | type | description |
 | --- | --- | --- |
-| Artist | STR | "Depeche Mode" |
+| Artist | STR | Artist name |
 | Songs  | STR | All the songs of the artist will be joined in a corpus for each artist |
 
