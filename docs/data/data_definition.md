@@ -12,7 +12,7 @@ _**For ease of modifying this report, placeholder links are included in this pag
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-| Lyrics | Lyrics mined from Genius.com | tdsp_template/scripts/data_acquisition | [data_acquisition.py](tdsp_template/scripts/data_acquisition/data_acquisition.py) | [Dataset 1 Report] tdsp_template/docs/data/data_definition.md|
+| Lyrics | Lyrics mined from Genius.com | lyrics_generator/scripts/data_acquisition | [data_acquisition.py](lyrics_generator/scripts/data_acquisition/data_acquisition.py) | [Dataset 1 Report] lyrics_generator/docs/data/data_definition.md|
 
 * Lyrics summary. <Collection of songs by each artist, containing 25 lyrics for each one. More detailed information should be in the data_definition Report.>
 
