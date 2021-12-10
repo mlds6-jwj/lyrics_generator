@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "lyricsgenius"
+version = "0.1.0"
+description = "App project for MLDS6 course"
+authors = ["jwj <mlds6.jwj@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
