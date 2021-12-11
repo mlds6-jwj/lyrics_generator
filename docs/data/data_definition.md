@@ -15,7 +15,7 @@ The database consists of two basic columns: "artists" and "lyrics". The "artists
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Processed Dataset | [Dataset](link/to/dataset1/report) | [data_cleaning_poo.ipynb](https://github.com/mlds6-jwj/lyrics_generator/scripts/preprocessing/data_acquisition_POO.ipynb) | [data_cleaning_poo.ipynb](https://github.com/mlds6-jwj/lyrics_generator/scripts/preprocessing/data_acquisition_POO.ipynb) |
+| Processed Dataset | [Dataset](link/to/dataset1/report) | [data_cleaning_poo.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/data_cleaning_poo.ipynb) | [data_cleaning_poo.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/data_cleaning_poo.ipynb) |
 * Processed Data summary: <The lyrics dataset was processed using typical transformations such as lower case, only alphanumeric strings, tokenizing and lemmatizing.>
 
 ## Feature Sets
