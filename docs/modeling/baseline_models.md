@@ -37,7 +37,7 @@ _Baseline model is the the model a data scientist would train and evaluate quick
 
 * El modelo agrupa directamente artistas que comparten sentimientos similares en sus letras. A pesar de que existen algunos outliers con valores extremos, esto no afecta la clasificación general del modelo en cuanto a lo que se puede presentar al cliente.
 
-## Entendimiento del modelo (Agglomerative Clustering)
+## Entendimiento del modelo (LSTM)
 
 * El modelo genera lyrics automáticamente basándose en las palabras qué se le den inicialmente, y dado un factor de temperatura, permitirá tener párrafos más cortos o más largos según lo deseado por el usuario. 
 
