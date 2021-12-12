@@ -1,11 +1,11 @@
 [tool.poetry]
-name = "packagename"
+name = "lyricsgenius"
 version = "0.1.0"
-description = "Project template for data science projects"
-authors = ["Juan Lara <julara@unal.edu.co>"]
+description = "App project for MLDS6 course"
+authors = ["jwj <mlds6.jwj@gmail.com>"]
 
 [tool.poetry.dependencies]
-python = "^3.9"
+python = "^3.8"
 
 [tool.poetry.dev-dependencies]
 

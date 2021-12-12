@@ -1,35 +1,27 @@
 # Data and Feature Definitions
 
-This document provides a central hub for the raw data sources, the processed/transformed data, and feature sets. More details of each dataset is provided in the data summary report. 
+The model uses text data from a website, which allow us to mine up to top 25 songs lyrics of rock artists. This data is processed to be explored and used as input in our text model.
 
-For each data, an individual report describing the data schema, the meaning of each data field, and other information that is helpful for understanding the data is provided. If the dataset is the output of processing/transforming/feature engineering existing data set(s), the names of the input data sets, and the links to scripts that are used to conduct the operation are also provided. 
-
-For each dataset, the links to the sample datasets in the _**Data**_ directory are also provided. 
-
-_**For ease of modifying this report, placeholder links are included in this page, for example a link to dataset 1, but they are just placeholders pointing to a non-existent page. These should be modified to point to the actual location.**_
+The database consists of two basic columns: "artists" and "lyrics". The "artists" column is a list of artists that are available in this website. The "lyrics" column is a list of artist songs lyrics, and are maximum 25 for each artist.
 
 ## Raw Data Sources
 
 | Dataset Name | Original Location   | Destination Location  | Data Movement Tools / Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | -----: |
-| Lyrics | Lyrics mined from Genius.com | tdsp_template/scripts/data_acquisition | [data_acquisition.py](tdsp_template/scripts/data_acquisition/data_acquisition.py) | [Dataset 1 Report] tdsp_template/docs/data/data_definition.md|
+| Lyrics | Lyrics mined from Genius.com | lyrics_generator/scripts/data_acquisition | [data_acquisition_POO.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/Dev/scripts/data_acquisition/data_acquisition_POO.ipynb) | [eda_lyrics.ipynb](https://github.com/mlds6-jwj/lyrics_generator/scripts/eda/eda_lyrics.ipynb)|
 
-* Lyrics summary. <Collection of songs by each artist, containing 25 lyrics for each one. More detailed information should be in the data_definition Report.>
+* Lyrics summary: <Collection of songs by each artist, containing 25 lyrics for each one. The data_acquisition.py file provides the method to get the data and the eda_lyrics provides an exploratory data analysis of the dataset.>
 
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Processed Dataset 1 | [Dataset1](link/to/dataset1/report), [Dataset2](link/to/dataset2/report) | [Python_Script1.py](link/to/python/script/file/in/Code) | [Processed Dataset 1 Report](link/to/report1)|
-| Processed Dataset 2 | [Dataset2](link/to/dataset2/report) |[script2.R](link/to/R/script/file/in/Code) | [Processed Dataset 2 Report](link/to/report2)|
-* Processed Data1 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data1 Report.>
-* Processed Data2 summary. <Provide brief summary of the processed data, such as why you want to process data in this way. More detailed information about the processed data should be in the Processed Data2 Report.> 
+| Processed Dataset | [Dataset](link/to/dataset1/report) | [data_cleaning_poo.ipynb](https://github.com/mlds6-jwj/lyrics_generator/scripts/preprocessing/data_acquisition_POO.ipynb) | [data_cleaning_poo.ipynb](https://github.com/mlds6-jwj/lyrics_generator/scripts/preprocessing/data_acquisition_POO.ipynb) |
+* Processed Data summary: <The lyrics dataset was processed using typical transformations such as lower case, only alphanumeric strings, tokenizing and lemmatizing.>
 
 ## Feature Sets
 
 | Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Feature Set 1 | [Dataset1](link/to/dataset1/report), [Processed Dataset2](link/to/dataset2/report) | [R_Script2.R](link/to/R/script/file/in/Code) | [Feature Set1 Report](link/to/report1)|
-| Feature Set 2 | [Processed Dataset2](link/to/dataset2/report) |[SQL_Script2.sql](link/to/sql/script/file/in/Code) | [Feature Set2 Report](link/to/report2)|
+| Feature Set | [Dataset](link/to/dataset1/report) | [R_Script2.R](link/to/R/script/file/in/Code) | [Feature Set1 Report](link/to/report1)|
 
 * Feature Set1 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set1 Report.>
-* Feature Set2 summary. <Provide detailed description of the feature set, such as the meaning of each feature. More detailed information about the feature set should be in the Feature Set2 Report.> 
