@@ -1,16 +1,29 @@
 # Data Dictionary
 
-This project uses a pretty simple dataset structure, which uses only two variables: the target (the artist name) and the predictor (their lyrics of their songs).
+En este proyecto se utiliza un dataset que contiene esencialmente dos columnas, artista y lyrics. Para ello, tenemos 4 archivos principales que se usan a lo largo de todo el proyecto.
 
 # Lyrics.txt
 
-This database is the collection of all the lyrics available for a limited set of artists associated with the Rock genre. It's divided by artist and song. Each artist have up to 25 songs and will be in raw format. Once made the data preprocessing, the table should have this format: 
+Es el dataset crudo que es minado de Genius.com por parte del script de minado. Para ser usado, se utiliza el script de preprocesado que nos retorna 3 outputs principales, descritos a continuación
 
-## Table 1
+### artist_corpus.csv
 
-Here you must describe the table
+El dataset es un corpus completo con todas las canciones de cada uno de los artistas, donde cada registro es un artista único con el corpus completo de todo su repertorio musical. 
 
-| column | type | description |
+| columna | tipo | descripción |
 | --- | --- | --- |
-| Artist | STR | Artist name |
-| Songs  | STR | All the songs of the artist will be joined in a corpus for each artist |
+| artist | STR | Nombre del artista |
+| lyrics  | STR | Todas las canciones del artista unidas en un solo corpus |
+
+## songs_df.csv
+
+El dataset es similar, salvo que cada registro es una canción única del artista y permite el análisis preliminar del script de EDA. 
+
+| columna | tipo | descripción |
+| --- | --- | --- |
+| artist | STR | Nombre del artista |
+| lyrics  | STR | Todas las canciones del artista, separadas en registros únicos por canción |
+
+## corpus.txt
+
+Es un archivo de texto sin estructura de dataset que contiene todas las canciones de todos los artistas, usado para el entrenamiento y ajuste del modelo de redes neuronales LSTM para la generación de lyrics.
