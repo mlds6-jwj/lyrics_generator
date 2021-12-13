@@ -35,7 +35,7 @@
 
 ## Entendimiento del modelo (LSTM)
 
-* El ***modelo genera lyrics** automáticamente basándose en las palabras qué se le den inicialmente, y dado un factor de temperatura, permitirá tener párrafos más cortos o más largos según lo deseado por el usuario. 
+* El ***modelo genera lyrics*** automáticamente basándose en las palabras qué se le den inicialmente, y dado un factor de temperatura, permitirá tener párrafos más cortos o más largos según lo deseado por el usuario. 
 
 ## Conclusion y discusión Agglomerative Clustering
 
