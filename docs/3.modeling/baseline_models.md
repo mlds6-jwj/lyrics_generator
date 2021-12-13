@@ -1,9 +1,5 @@
 # Baseline Model Report
 
-_Baseline model is the the model a data scientist would train and evaluate quickly after he/she has the first (preliminary) feature set ready for the machine learning modeling. Through building the baseline model, the data scientist can have a quick assessment of the feasibility of the machine learning task._
-
-> If using the Automated Modeling and Reporting tool, most of the sections below will be generated automatically from this tool. 
-
 ## Analytic Approach
 * Para el modelo de clusterización, no tenemos un target como tal. Para el modelo de generación de Lyrics, lo ideal es tener un valor de loss bajo y un accuracy alto para validación.
 * Para el modelo de clusterización, será un dataset donde se contienen los valores normalizados de los sentimientos asociados a los artistas por medio del mapeo de emolex. Para el modelo de generación de lyrics, el dataset es un corpus de texto con una representación vectorizada.
