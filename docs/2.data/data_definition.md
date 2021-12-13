@@ -24,4 +24,4 @@ The database consists of two basic columns: **artists** and **lyrics**. The **ar
 | ---:| ---: | ---: | ---: | 
 | Feature Set | [Dataset](link/to/dataset1/report) | [Dataset_preprocessed](link/to/R/script/file/in/Code) | [Feature_extraction.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/Dev/scripts/preprocessing/Feature_extraction.ipynb)|
 
-* **Feature Set1 summary.** The lyrics dataset was processed using typical transformations such as lower case, only alphanumeric strings, tokenizing and lemmatizing. Then, we perform a feature extraction procedure using Agglomerative Clustering.
+* **Feature Set summary.** The lyrics dataset was processed using typical transformations such as lower case, only alphanumeric strings, tokenizing and lemmatizing. Then, we perform a feature extraction procedure using Agglomerative Clustering.
