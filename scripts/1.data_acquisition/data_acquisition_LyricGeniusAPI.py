@@ -6,12 +6,18 @@ import os
 
 def login_genius(key = 'h5ZhFryULh_gum-tPES8CR9ovkkJKJHuOXy2WfoebApbBxsfJmjbyRGekOMHmczw', skip = True, exclude = [], remove_headers = True):
   """
-  key => llave única para acceder a Genius como desarrollador
-  skip => salta cualquier contenido que no sean lyrics
-  exclude => términos que deben ser excluidos del nombre de cada canción, recomendado [('Remix'),('Live')]
-  remove_headers => quita la descripción de la canción
-  Esta funcion toma un key del usuario (que se obtiene del registro en Genius) o usa el que esta por defecto, y el usuario puede escoger sa desea saltar elementos que no sean canciones.
-  Devuelve un objeto de clase Genius que permite la consulta de canciones.
+  Args:
+
+  <key> => llave única para acceder a Genius como desarrollador (se obtiene del registro en genius.com)
+  <skip> => salta cualquier contenido que no sean lyrics
+  <exclude> => términos que deben ser excluidos del nombre de cada canción, recomendado [('Remix'),('Live')]
+  <remove_headers> => quita la descripción de la canción
+
+  Description:
+
+  Esta función toma un <key> del usuario (tiene una por defecto) y el usuario puede escoger si desea saltar elementos que no sean letras de canciones.
+  Retorna un objeto de clase Genius que permite la consulta de canciones.
+
   """
   genius = lg.Genius(key, skip_non_songs = skip, excluded_terms = exclude, remove_section_headers = remove_headers)
   return genius
