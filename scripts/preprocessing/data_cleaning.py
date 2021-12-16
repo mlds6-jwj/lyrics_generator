@@ -36,7 +36,7 @@ def lyrics_cleaning(data, special_words=""):
     lyrics_prelim.append(re.sub(' +', ' ', #Convierte espacios múltiples en uno solo
                                 re.sub(' , ', '', # Elimina las comas solitarias
                                        re.sub(r"|ahah|Ahah|Hey|hey|oh|la-la|sha-ba-da|Shoop-doop-doop|​efil|flaH|yeah|urlcopyembedcopy|\\","", #Elimina estribillos
-                                              re.sub(r"endoftext|EmbedShare|URLCopyEmbedCopy","", #Elimina la etiqueta del final del texto 
+                                              re.sub(r"endoftext|EmbedShare|URLCopyEmbedCopy|","", #Elimina la etiqueta del final del texto 
                                                      re.sub(r"{sp}".format(sp = special_words), "", # El usuario puede quitar los estribillos que considere
                                                             re.sub(r"[^a-zA-Z\s\.\,\']","", #Reemplaza los saltos de línea entre cada prosa con un espacio en blanco
                                                                    re.sub(r".*,", "", lyric, 1)))))))) #Elimina la etiqueta al principio de cada canción que indica al artista
