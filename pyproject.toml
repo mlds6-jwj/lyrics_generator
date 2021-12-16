@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "lyrics_generator"
+version = "0.1.0"
+description = "App project for MLDS6 course"
+authors = ["jwj <mlds6.jwj@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+numpy = "^1.21.4"
+pandas = "^1.3.5"
+
+[tool.poetry.dev-dependencies]
+ipython = "^7.30.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
