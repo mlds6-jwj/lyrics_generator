@@ -3,4 +3,4 @@
 env_vars*
 credentials*
 **/build/*
-**.ipynb*
+**.ipynb_checkpoints
