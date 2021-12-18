@@ -1,14 +1,18 @@
 # Data Dictionary
 
-En este proyecto se utiliza un dataset que contiene esencialmente dos columnas, artista y lyrics. Para ello, tenemos 4 archivos principales que se usan a lo largo de todo el proyecto.
+En este proyecto se utiliza un dataset que contiene esencialmente dos columnas, artista y lyrics. 
 
-# Lyrics.txt
+A lo largo de todo el proyecto tenemos 4 archivos principales. 
 
-Es el dataset crudo que es minado de Genius.com por parte del script de minado. Para ser usado, se utiliza el script de preprocesado que nos retorna 3 outputs principales, descritos a continuación
+## lyrics.txt
 
-### artist_corpus.csv
+Es el dataset crudo que es minado de Genius.com por parte del script de minado. 
 
-El dataset es un corpus completo con todas las canciones de cada uno de los artistas, donde cada registro es un artista único con el corpus completo de todo su repertorio musical. 
+Para ser usado, se utiliza el script de preprocesado que nos retorna 3 outputs principales, descritos a continuación
+
+## artist_corpus.csv
+
+El dataset es un corpus completo con todas las canciones de cada uno de los artistas, donde cada registro es un artista único con el corpus completo de su repertorio musical. 
 
 | columna | tipo | descripción |
 | --- | --- | --- |
