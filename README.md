@@ -1,11 +1,9 @@
-# Team Data Science Project Template
+# Lyrics Generator
 
-This template is an implementation of the Microsoft's Team Data Science Project Template that is currently used at the "Programa de Formación en Machine Learning and Data Science" at Universidad Nacional de Colombia.
+We created a Deep Learning model of Long Short Term Memory (LSTM) that provides text generation of music lyrics in the Rock genre.
 
-You'll need tools like `poetry` (default), `venv`, `pyenv` (default), `renv`, `conda`, among others for dependency management and resolution.
+This project provides the following folders:
 
-This template provides the following folders:
-
-* `packagename`: put the source code (classes and functions) in this folder.
-* `docs`: put the documentation in this folder.
-* `scripts`: this folder must contain the scripts/notebooks that will be executed.
+* `lyrics_generator`: python source code.
+* `docs`: project documentation (business_understanding,data,modeling,deployment.).
+* `scripts`: contains the scripts/notebooks that were used for: data_acquisition, eda, evaliation, preprocessing and training .
