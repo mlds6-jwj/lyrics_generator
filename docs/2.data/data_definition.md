@@ -10,7 +10,7 @@ The database consists of two basic columns: **artists** and **lyrics**. The **ar
 | ---:| ---: | ---: | ---: | -----: |
 | lyrics.txt | Lyrics mined from **genius.com** | /lyrics_generator/lyricsgenius/database/ | [data_acquisition_LyricGeniusAPI.py](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/data_acquisition/data_acquisition_LyricGeniusAPI.py) | [eda_lyrics.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/eda/eda_lyrics.ipynb)|
 
-* **Lyrics summary:** Collection of songs by each artist, containing **25 lyrics** for each one. The ***data_acquisition_LyricGeniusAPI.py*** file provides the method to get the data and the ***eda_lyrics.py*** provides an exploratory data analysis of the dataset.
+* **Lyrics summary:** Collection of songs by each artist, containing **25 lyrics** for each one. The ***data_acquisition_LyricGeniusAPI.py*** file provides the method to get the data and the ***eda_lyrics.ipynb*** provides an exploratory data analysis of the dataset.
 
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
