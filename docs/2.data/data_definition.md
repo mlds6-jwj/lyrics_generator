@@ -15,13 +15,14 @@ The database consists of two basic columns: **artists** and **lyrics**. The **ar
 ## Processed Data
 | Processed Dataset Name | Input Dataset(s)   | Data Processing Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Processed Dataset | [Dataset](https://github.com/mlds6-jwj/lyrics_generator/blob/main/lyricsgenius/database/lyrics.txt) | [data_cleaning_poo.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/data_cleaning_poo.ipynb) | [data_cleaning_poo.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/data_cleaning_poo.ipynb) |
+| songs_df.csv | lyrics.txt | [data_cleaning.py](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/data_cleaning.py) | [data_cleaning_poo.py](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/data_cleaning_poo.py) |
+| corpus.txt | lyrics.txt | [data_cleaning.py](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/data_cleaning.py) | [data_cleaning_poo.py](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/data_cleaning_poo.py) |
 * **Processed Data summary:** The lyrics dataset was processed using typical transformations such as lower case, only alphanumeric strings, tokenizing and lemmatizing.
 
 ## Feature Sets
 
 | Feature Set Name | Input Dataset(s)   | Feature Engineering Tools/Scripts | Link to Report |
 | ---:| ---: | ---: | ---: | 
-| Feature Set | [Dataset](https://github.com/mlds6-jwj/lyrics_generator/blob/main/lyricsgenius/database/data_preprocessed/artist_corpus.csv) | [Feature_extraction.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/Feature_extraction.ipynb) | [Feature_extraction.ipynb](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/Feature_extraction.ipynb)|
+| artist_corpus.csv | lyrics.txt | [Feature_extraction.py](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/Feature_extraction.py) | [Feature_extraction.py](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/preprocessing/Feature_extraction.py)|
 
 * **Feature Set summary.** The lyrics dataset was processed using typical transformations such as lower case, only alphanumeric strings, tokenizing and lemmatizing. Then, we perform a feature extraction procedure using Agglomerative Clustering.
