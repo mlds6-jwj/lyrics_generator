@@ -1,6 +1,4 @@
-
-# !pip install lyricsgenius
-
+from datetime import datetime
 import lyricsgenius as lg
 import os
 
@@ -24,6 +22,8 @@ def login_genius(key = 'h5ZhFryULh_gum-tPES8CR9ovkkJKJHuOXy2WfoebApbBxsfJmjbyRGe
 
 def default_artist():
   """
+  Description:
+
   Lista por defecto para minar los datos
   """
   artist_list = ['MGMT','Motionless In White','Mistki','The Offspring','Architects','Incubus','Bad Omens','Hollywood Undead','Blink-182','My Chemical Romance','As I Lay Dying','Avenged Sevenfold',
@@ -35,34 +35,46 @@ def default_artist():
                     'Nick Cave the Bad Seeds','Bob Marley', 'Mr. Kitty','Lacuna Coil','The Neighbourhood','Ice Nine Kills']
   return artist_list
 
-def get_lyrics(arr:list, k:int):
+def get_lyrics(geniusSession:lg.Genius, arr:list, k:int):
     """
-    arr => lista de artistas para minar (recomendado que todos sean del mismo idioma)
-    k => int, número de canciones por artista
-    Toma un contador desde cero que permite llevar la cuenta de canciones por artista. 
-    Luego, comienza a buscar por arista, la cantidad de canciones deseadas ordenadas por popularidad y las escribe en lyrics.txt, que es la base de datos usada.
-    Devuelve una lista 
+    Args:
+
+    <geniusSession> => Objeto tipo Genius que permite la consulta.
+    <arr> => lista de artistas para minar (recomendado que todos sean del mismo idioma).
+    <k> => int, número de canciones por artista.
+
+    Description:
+
+    Toma un contador desde cero que permite llevar la cuenta de canciones por artista.
+    Luego, comienza a buscar por artista, la cantidad de canciones deseadas ordenadas por popularidad y las escribe en lyrics.txt, que es la base de datos usada.
+    Retorna una lista.
     """
     c = 0
     lyrics_list = []
     for name in arr:
         try:
-            songs = (genius.search_artist(name, max_songs=k, sort='popularity')).songs
+            songs = (geniusSession.search_artist(name, max_songs=k, sort='popularity')).songs
             s = [f"Artist:{name}, \n {song.lyrics} \n \n  <|endoftext|>   \n \n" for song in songs]
             lyrics_list.append(s)
             c += 1
-            print(f"Songs grabbed:{len(s)}")
+            print(f"Songs grabbed:{len(s)}\n")
         except:
             print(f"some exception at {name}: {c}")
     return [''.join(x) for x in lyrics_list]
 
-def create_file(name='lyrics.txt', lyrics_list = []):
+def create_file(name='lyrics', final_lyrics=[]):
   """
-  name => nombre del archivo+extensión, por defecto es lyrics.txt
-  lyrics_list => lista con los artistas y sus respectivas canciones
-  Crea un archivo donde se guardarán las canciones descargadas
+  Args:
+
+  <name> => nombre del archivo+extensión, por defecto es lyrics.txt.
+  <lyrics_list> => lista con los artistas y sus respectivas canciones.
+
+  Description:
+
+  Crea un archivo <name> donde se guardarán las canciones descargadas.
   """
-  lyrics = open(f'{name}',"w")
+  filename = name +'-'+ datetime.now().strftime("%Y_%m_%d")
+  lyrics = open(filename+'.txt',"w")
   lyrics.write(' '.join(map(str, final_lyrics)))
   lyrics.close()
 
@@ -75,4 +87,3 @@ final_lyrics = get_lyrics(arr = artists, k = 25)
 
 create_file('lyrics.txt', final_lyrics)
 """
-

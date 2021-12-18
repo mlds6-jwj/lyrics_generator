@@ -8,6 +8,7 @@ authors = ["jwj <mlds6.jwj@gmail.com>"]
 python = ">=3.8,<3.11"
 numpy = "^1.21.4"
 pandas = "^1.3.5"
+lyricsgenius = "^3.0.1"
 
 [tool.poetry.dev-dependencies]
 ipython = "^7.30.1"
