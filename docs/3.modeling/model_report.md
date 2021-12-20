@@ -57,7 +57,8 @@ _Report describing the final model to be delivered - typically comprised of one 
 
 ## Algorithm
 * Description: ![alt text](https://i.imgur.com/wDScpQi.jpeg)
-* Learners: LSTM, red neuronal multicapa. ![alt text](https://i.imgur.com/gExYgkn.png)
+* Learners: LSTM, red neuronal multicapa. 
+![alt text](https://i.imgur.com/gExYgkn.png)
 * Hyper-parameters: Son los parámetros por defecto para el entrenamiento del modelo inicial
 
     * Embedding Dimension = 256
