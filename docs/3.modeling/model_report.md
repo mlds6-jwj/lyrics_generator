@@ -52,7 +52,7 @@ _Report describing the final model to be delivered - typically comprised of one 
 * Stats: Más de 2.5 millones de carácteres, 54x25 canciones en total.
 
 ## Features
-* Features: Ninguna, se usa el texto crudo.
+* Features: Se usa una representación numérica donde cada letra tiene un identificador único. 
 * Importance ranking: Las capas encontradas por medio de los hiperparámetros fueron suficientes, adicionalmente, el dropout resultó siendo determinante para alcanzar los resultados del modelo actual. 
 
 ## Algorithm

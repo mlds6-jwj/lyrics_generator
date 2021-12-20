@@ -68,7 +68,39 @@ def fit_model(model, train_dataset, test_dataset, epochs, examples_per_epoch, va
   model.fit(train_dataset.repeat(), validation_data = test_dataset.repeat(), epochs=epochs, callbacks=[checkpoint_callback], 
                  steps_per_epoch=examples_per_epoch//batch_size, validation_steps = validation_steps)
   
+def generate_text(model, start_string, vocab, text_len=500, temperature=0.5):
 
+    """
+    Función que genera texto de manera automática a partir de predecir el siguiente caracter mas probable
+    recibe como input el modelo, un texto plano, un vocabulario y una temperatura para ajustar el resultado.
+    """
+
+
+    # vectorizamos el string inicial
+    char2idx = {u:i for i, u in enumerate(vocab)}
+    input_eval = [char2idx[s] for s in start_string]
+    input_eval = tf.expand_dims(input_eval, 0)
+
+    # Lista para guardar los resultados
+    text_generated = []
+
+    # Reiniciamos los estados del modelo
+    model.reset_states()
+    # iteramos para obtener el número de carácteres deseado
+    for i in range(text_len):
+        # obtenemos las predicciones
+        predictions = model(input_eval)
+        # removemos el eje de los batch
+        predictions = tf.squeeze(predictions, 0)
+
+        # utilizamos la distribución categorica para obtener el siguiente caracter
+        predictions = predictions / temperature
+        predicted_id = tf.random.categorical(predictions, num_samples=1)[-1,0].numpy()
+        # predicted_id es el caracter predicho (este será la entrada en la siguiente iteración)
+        input_eval = tf.expand_dims([predicted_id], 0)
+        # agregamos el string correspondiente al id predicho
+        text_generated.append(idx2char[predicted_id])
+    return (start_string + ''.join(text_generated))
 
 """
 corpus = load_corpus('corpus.txt')
