@@ -1,6 +1,6 @@
 # Data and Feature Definitions
 
-The model uses text data from a website (**genius.com**), which allow us to mine up to top 25 songs lyrics of rock artists. This data is processed to be explored and used as input in our text model.
+The model uses text data from **[genius.com](genius.com)** website, which allow us to mine up to top 25 songs lyrics of rock artists. This data is processed to be explored and used as input in our text model.
 
 The database consists of two basic columns: **artists** and **lyrics**. The **artists** column is a list of artists that are available in this website. The **lyrics** column is a list of artist songs lyrics, and are maximum 25 for each artist.
 
