@@ -5,7 +5,7 @@ Customer: Juan Sebastian Lara, Melissa de la Pava
 Team Members: William Agudelo (PM), Juan Carranza, Juan Munoz, Jaime Vera (Data Scientists)
 
 ##	Overview
-We created a deep learning moldel that provide lyrics generation in the various rock subgenres. 
+We created a deep learning model that provide lyrics generation in the various rock subgenres. 
 This model allows getting generation of lyrics with only a couple of words that provide some context to the model. 
 In addition to the deployment with Flask with just a few clicks our client can access this solution.
 
