@@ -3,7 +3,7 @@
 ## Analytic Approach
 * Para el modelo de clusterización, no tenemos un target como tal. Para el ***modelo de generación de lyrics***, lo ideal es tener un valor de **loss** bajo y un **accuracy** alto para validación.
 * Para el modelo de clusterización, será un dataset donde se contienen los valores normalizados de los sentimientos asociados a los artistas por medio del mapeo de emolex. Para el ***modelo de generación de lyrics***, el dataset es un corpus de texto con una representación vectorizada.
-* Para el modelo de clusterización, se hizo uso de [**Agglomerative Clustering**](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/training/agglomerative_clustering.ipynb), donde se encontró el mejor cluster por medio de [**inercia**](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/evaluation/model_evaluation_agg_clus.ipynb) y por medio del [**coeficiente de silueta**](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/evaluation/model_evaluation_agg_clus.ipynb). Además, para el **modelo de generación de lyrics**, se entrenó un **LSTM multicapa**. 
+* Para el modelo de clusterización, se hizo uso de [**Agglomerative Clustering**](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/training/agglomerative_clustering.py), donde se encontró el mejor cluster por medio de [**inercia**](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/evaluation/model_evaluation_agg_clus.py) y por medio del [**coeficiente de silueta**](https://github.com/mlds6-jwj/lyrics_generator/blob/main/scripts/evaluation/model_evaluation_agg_clus.py). Además, para el **modelo de generación de lyrics**, se entrenó un **LSTM multicapa**. 
 
 ## Model Description
 
