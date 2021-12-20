@@ -13,17 +13,18 @@
 ## Scope
 * What data science solutions are we trying to build?
 
-  Generative Model of text, based on Long short-term memory (LSTM) and Recurrent Neural Networks (RNN).
+  Generative Model of text, based on Long short-term memory (LSTM) and Recurrent Neural Networks (RNN). Also, a non-supervised model for checking the distance of one artist to each other.
   
 * What will we do?
 
-  Recurrent Neural Networks to generate lyrics given an initial phrase or phrases and fixed lenght. 
+  Recurrent Neural Networks to generate lyrics given an initial phrase or phrases and fixed lenght. Agglomerative Clustering for checking the underlying artist data.
   
 * How is it going to be consumed by the customer?
 
   The consumer will have an archive containing the lyrics of the song, ready for production as an output. 
   The client will also have their own database of lyrics for training the model. 
   This database will have the same structure than the original one giving as an input of the tool the list of the artists and the number of songs wanted.
+  Also, the client will have access to an interactive API designed in flask.
 
 ## Personnel
 * Who are on this project:
@@ -44,7 +45,7 @@
   
 * What is a quantifiable metric?
 
-  Improve the quantity of songs accepted by the record label | Improve the awareness of the music produced and posteriorly increase sales.
+  Accuracy and loss values for the LSTM model. Inertia and silhouette coefficient for the clustering model.
   
 * Quantify what improvement in the values of the metrics are useful for the customer scenario.
 
@@ -65,6 +66,7 @@
 3. Adapt python scripts for data preprocessing
 4. Adapt python scripts for modelling and evaluation
 5. Create scripts for giving the output to the client in txt format
+6. API Deployment
 
 Timeline - 3 weeks from now, approximately Dec 16th - 2021
 
@@ -85,7 +87,8 @@ Timeline - 3 weeks from now, approximately Dec 16th - 2021
   * Data movement pipeline in production
 	- Along the preprocessing and modelling scripts in a common corpus
   * Make a 1 slide diagram showing the end to end data flow and decision architecture
-    * If there is a substantial change in the customer's business workflow, make a before/after diagram showing the data flow.
+    * Clustering Model: ![alt text](https://i.imgur.com/zhFzYcS.jpeg)
+    * LSTM Model: ![alt text](https://i.imgur.com/wDScpQi.jpeg)
 
 ## Communication
 * How will we keep in touch? Weekly meetings?
