@@ -1,62 +1,60 @@
 # Exit Report of Project <X> for Customer <Y>
 
-Instructions: Template for exit criteria for data science projects. This is concise document that includes an overview of the entire project, including details of each stage and learning. If a section isn't applicable (e.g. project didn't include a ML model), simply mark that section as "Not applicable". Suggested length between 5-20 pages. Code should mostly be within code repository (not in this document).
+Customer: Juan Sebastian Lara, Melissa de la Pava
 
-Customer: <Enter Customer Name\>
-
-Team Members: <Enter team member' names. Please also enter relevant parties names, such as team lead, Account team, Business stakeholders, etc.\>
+Team Members: William Agudelo (PM), Juan Carranza, Juan Munoz, Jaime Vera (Data Scientists)
 
 ##	Overview
-
-<Executive summary of entire solution, brief non-technical overview\>
+We created a deep learning moldel that provide lyrics generation in the various rock subgenres. 
+This model allows getting generation of lyrics with only a couple of words that provide some context to the model. 
+In addition to the deployment with Flask with just a few clicks our client can access this solution.
 
 ##	Business Domain
-<Industry, business domain of customer\>
+Music production industry.
 
 ##	Business Problem
-<Business problem and exact use case(s), why it matters\>
+Lyrics creation.
 
 ##	Data Processing
-<Schema of original datasets, how data was processed, final input data schema for model\>
+We performed typical text processing techniques such as tokenizing, lemmatizing, removing stop words and other undesired elements of the text.
 
 ##	Modeling, Validation
-<Modeling techniques used, validation results, details of how validation conducted\>
+We conducted a procedure in the training process that allowed us to validate this predictions, getting the best possible model with our configuration.
 
 ##	Solution Architecture
-<Architecture of the solution, describe clearly whether this was actually implemented or a proposed architecture. Include diagram and relevant details for reproducing similar architecture. Include details of why this architecture was chosen versus other architectures that were considered, if relevant\>
+This architecture followed many models of text prediction, which are famous by the fact that they only need a simple input and can provide large text predictions.
 
 ##	Benefits
 	
 ###	Company Benefit (internal only. Double check if you want to share this with your customer)
-<What did our company gain from this engagement? ROI, revenue,  etc\>
+Now, our customer can quickly interact with this solution and get more ideas in the lyrics creation.
 
 ###	Customer Benefit
-What is the benefit (ROI, savings, productivity gains etc)  for the customer? If just POC, what is estimated ROI? If exact metrics are not available, why does it have impact for the customer?\>
+Our client can save time creating lyrics and by doing so, producing more efficiently.
 
 ##	Learnings
 
 ### 	Project Execution
-<Learnings around the customer engagement process\>
+Text predictions using deep learning is definitely a fruitful way to get better results compared to the typical machine learnings models.
 
 ### Data science / Engineering
-<Learnings related to data science/engineering, tips/tricks, etc\>
+Having a very organized repository clearly defines how quickly the project can achieve their goals and deadlines.
 
 
 ### Domain
-<Learnings around the business domain, \>
+After doing EDA on our dataset, we found that despite the fact we used only Rock music as input for the model, there are Rock artists that produce lyrics, which are in very isolated clusters. Then, being aware of this issue is crucial.
 
 ### Product
-<Learnings around the products and services utilized in the solution \>
+The more easy and simple the tool is, the more the client will use it.
 
 ###	What's unique about this project, specific challenges
-<Specific issues or setup, unique things, specific challenges that had to be addressed during the engagement and how that was accomplished\>
+Provides text prediction for a very specific genre, instead of trying to encompass so much.
 
 ##	Links
-<Links to published case studies, etc.; Link to git repository where all code sits\>
+https://github.com/mlds6-jwj/lyrics_generator
 
 ##	Next Steps
- 
-<Next steps. These should include milestones for follow-ups and who 'owns' this action. E.g. Post- Proof of Concept check-in on status on 12/1/2016 by X, monthly check-in meeting by Y, etc.\>
+Now, we need to check how the lyrics quality has changed by the use of our tool.
 
 ## Appendix
-<Other material that seems relevant – try to keep non-appendix to <20 pages but more details can be included in appendix if needed\>
+N.A.
